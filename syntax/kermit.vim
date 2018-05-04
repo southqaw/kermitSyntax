@@ -92,6 +92,8 @@ syn match kmtSpecial  "\\\d\+"
 " Labels
 
 syn match kmtLabel    ":[a-zA-Z0-9]\+"
+syn keyword kmtGoto  goto GOTO nextgroup=kmtGotoLbl skipwhite
+syn match kmtGotoLbl   "[a-zA-Z0-9]\+" contained
 
 " Strings
 
@@ -145,7 +147,6 @@ syn keyword kmtsfunc ftp FTP
 syn keyword kmtsfunc get GET
 syn keyword kmtsfunc getc GETC
 syn keyword kmtsfunc getok GETOK
-syn keyword kmtsfunc goto GOTO
 syn keyword kmtsfunc grep GREP
 syn keyword kmtsfunc head HEAD
 syn keyword kmtsfunc hangup HANGUP
@@ -280,6 +281,8 @@ if version >= 508 || !exists("did_kermit_syn_inits")
   HiLink kmtSet     Constant
 
   HiLink kmtLabel   PreProc
+  HiLink kmtGoto    Function
+  HiLink kmtGotoLbl PreProc
 
   delcommand HiLink
 endif
