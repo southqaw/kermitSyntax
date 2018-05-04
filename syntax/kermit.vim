@@ -45,19 +45,19 @@ syn keyword kmtLocal  local LOCAL
 
 " Booleans operators
 
-syn keyword kmtComp   AND
-syn keyword kmtComp   OR
-syn keyword kmtComp   EQUAL
+syn keyword kmtComp   and AND
+syn keyword kmtComp   or OR
+syn keyword kmtComp   equal EQUAL
 syn keyword kmtComp   not NOT
-syn keyword kmtComp   LLT
-syn keyword kmtComp   LGT
+syn keyword kmtComp   llt LLT
+syn keyword kmtComp   lgt LGT
 syn match kmtComp     "[\>\<]?\="
 
 
 " Boolean constants
 
-syn keyword kmtBool   fail FAILURE ERROR
-syn keyword kmtBool   OK SUCCESS
+syn keyword kmtBool   fail failure error FAIL FAILURE ERROR
+syn keyword kmtBool   ok success OK SUCCESS
 
 
 " Conditions 
