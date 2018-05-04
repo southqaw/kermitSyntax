@@ -87,6 +87,7 @@ syn region kmtFCall   start="\\[a-zA-Z]\w*\s*(" end=")" contains=kmtFCall,kmtFun
 
 syn match kmtSVar     "\\%[a-zA-Z]"
 syn match kmtArg      "\\%\d"
+syn match kmtSpecial  "\\\d\+"
 
 
 " Strings
@@ -265,6 +266,8 @@ if version >= 508 || !exists("did_kermit_syn_inits")
 
   HiLink kmtSVar    Type
   HiLink kmtArg     Type
+
+  HiLink kmtSpecial SpecialChar
 
   HiLink kmtComment Comment
   HiLink kmtEnv     Comment
