@@ -89,6 +89,9 @@ syn match kmtSVar     "\\%[a-zA-Z]"
 syn match kmtArg      "\\%\d"
 syn match kmtSpecial  "\\\d\+"
 
+" Labels
+
+syn match kmtLabel    ":[a-zA-Z0-9]\+"
 
 " Strings
 
@@ -275,6 +278,8 @@ if version >= 508 || !exists("did_kermit_syn_inits")
   HiLink kmtsfunc   Function
 
   HiLink kmtSet     Constant
+
+  HiLink kmtLabel   PreProc
 
   delcommand HiLink
 endif
