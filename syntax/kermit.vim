@@ -17,6 +17,15 @@ syn keyword kmtSyntax ARRAY SORT INPUT OUTPUT IF FOR WHILE SWITCH GOTO ECHO ASK 
 syn keyword kmtSyntax GETOK ASSERT WAIT SLEEP FOPEN FREAD FWRITE FCLOSE STOP END
 syn keyword kmtSyntax RETURN LEARN SHIFT TRACE VOID INCREMENT DECREMENT HELP
 
+" SET Targets
+
+syn keyword kmtSet    host HOST
+syn keyword kmtSet    modem MODEM
+syn keyword kmtSet    line LINE
+syn keyword kmtSet    speed SPEED
+syn keyword kmtSet    flow-control FLOW-CONTROL
+syn keyword kmtSet    carrier-watch CARRIER-WATCH
+
 
 " Statements
 
@@ -261,6 +270,8 @@ if version >= 508 || !exists("did_kermit_syn_inits")
   HiLink kmtEnv     Comment
 
   HiLink kmtsfunc   Function
+
+  HiLink kmtSet     Constant
 
   delcommand HiLink
 endif
