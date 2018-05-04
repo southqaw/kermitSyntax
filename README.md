@@ -15,7 +15,15 @@ The project aims to provide syntax files compatible with as many text-editors as
 
 # Installation
 
-## VIM
+## Pathogen
+### Fork
+```
+git clone https://github.com/southqaw/kermitSyntax.git ~/.vim/bundle/kermitSyntax
+```
+### Original
+_Not Supported_
 
-Linux: Simply merge the folders located in the "vim"-folder with "~/.vim"
-Windows: TODO Add this
+## Manual (not recommended)
+
+Merge the folders located in the base of the repository with the corresponding folders in "~/.vim"
+

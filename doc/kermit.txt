@@ -1,0 +1,7 @@
+*kermit.txt*  Plugin that provides syntax highlighting for kermit files.
+
+==============================================================================
+Author: Thomas Li Fredriksen <https://github.com/thomafred>    *kermit-author*
+License: GPLv2
+
+==============================================================================
